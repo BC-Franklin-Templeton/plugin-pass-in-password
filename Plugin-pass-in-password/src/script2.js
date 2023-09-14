@@ -11,8 +11,8 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
     // Get a ModalDialog object
     ModalDialog = videojs.getComponent('ModalDialog');
   myPlayer.paused(false);
+  myPlayer.autoplay(false);
   myPlayer.muted(true);
-
 
 
   // +++ Display ModalDialog +++
@@ -64,7 +64,7 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
     playButton = document.createElement('button');
     playButton.textContent = 'Play Video';
     playButton.addEventListener('click', function() {
-
+   myPlayer.autoplay(false);
       myModal.close();
     });
     newElement.appendChild(playButton);
