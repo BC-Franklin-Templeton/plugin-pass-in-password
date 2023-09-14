@@ -12,9 +12,9 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
     ModalDialog = videojs.getComponent('ModalDialog');
   myPlayer.paused(false);
   myPlayer.muted(true);
-player.ready(function () {
+
     player.controlBar.playToggle.hide(); // Hide the play button
-});
+
   // +++ Display ModalDialog +++
   // Read password from options
   passwordToMatch = pluginOptions.password;
