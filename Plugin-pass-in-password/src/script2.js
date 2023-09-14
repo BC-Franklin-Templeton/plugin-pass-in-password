@@ -11,7 +11,6 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
     // Get a ModalDialog object
     ModalDialog = videojs.getComponent('ModalDialog');
   myPlayer.preload(false);
-  myPlayer.play(false);
   myPlayer.muted(true);
 
   // +++ Display ModalDialog +++
