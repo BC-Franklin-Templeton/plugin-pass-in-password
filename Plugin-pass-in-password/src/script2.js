@@ -67,7 +67,7 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
     playButton = document.createElement('button');
     playButton.textContent = 'Play Video';
     playButton.addEventListener('click', function() {
-      myPlayer.play();
+
       myModal.close();
     });
     newElement.appendChild(playButton);
