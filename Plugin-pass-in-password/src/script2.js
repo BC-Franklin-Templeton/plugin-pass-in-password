@@ -13,7 +13,9 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
   myPlayer.paused(false);
   myPlayer.muted(true);
 
-   
+   myPlayer.ready(function () {
+    myPlayer.controlBar.playToggle.hide(); // Hide the play button
+});
 
   // +++ Display ModalDialog +++
   // Read password from options
