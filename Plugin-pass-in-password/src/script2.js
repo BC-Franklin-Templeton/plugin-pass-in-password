@@ -54,6 +54,7 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
     if (userInputPassword == passwordToMatch) {
       myModal.close();
       showPlayButton();
+         myPlayer.autoplay(true);
     } else {
       window.alert('Sorry, password is incorrect. Try again.');
     }
@@ -64,7 +65,7 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
     playButton = document.createElement('button');
     playButton.textContent = 'Play Video';
     playButton.addEventListener('click', function() {
-   myPlayer.autoplay(false);
+   myPlayer.autoplay(true);
       myModal.close();
     });
     newElement.appendChild(playButton);
