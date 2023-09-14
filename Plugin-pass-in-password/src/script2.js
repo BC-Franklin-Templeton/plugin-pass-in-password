@@ -54,7 +54,7 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
     if (userInputPassword == passwordToMatch) {
       myModal.close();
       showPlayButton();
-      myPlayer.play();
+    
     } else {
       window.alert('Sorry, password is incorrect. Try again.');
     }
