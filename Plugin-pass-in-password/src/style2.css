@@ -2,7 +2,7 @@
   height: 344px;
   width: 610px;
   margin: 0 auto;
-  background-color:black;
+  background-color: black;
 }
 
 .wrap {
@@ -13,6 +13,7 @@
   transform: translate(-50%, -50%);
   padding: 10px;
   text-align: center;
+  background-color: black;
 }
 
 .theFormInput {
